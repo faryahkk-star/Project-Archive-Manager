@@ -7,7 +7,7 @@ from datetime import datetime, timedelta
 class ProjectArchiveManager:
     def __init__(self, workspace):
         self.workspace = Path(workspace)
-        self.archive = self.workspace / "archivve"
+        self.archive = self.workspace / "archive"
         self.archive.mkdir(exist_ok=True)
 
     def last_modified(self, folder):
